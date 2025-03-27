@@ -1,4 +1,4 @@
-package org.example.demorsaopenssl;
+package org.example.demorsaopenssl.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,13 +10,11 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/product")
 public class ProductController {
-
     @GetMapping("/list")
-    List<String> productList(){
+    public List<String> ProductList(){
         List<String> productList = new ArrayList<>();
-        productList.add("iphone 15");
-        productList.add("iphone 16");
-        productList.add("iphone 17");
+        productList.add("iPhone 15");
+        productList.add("iPhone 16");
         return productList;
     }
 }

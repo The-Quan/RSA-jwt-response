@@ -1,4 +1,4 @@
 package org.example.demorsaopenssl.payload;
 
-public class Token {
+public record Token (String token){
 }
